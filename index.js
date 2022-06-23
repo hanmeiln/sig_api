@@ -6,8 +6,10 @@ const adatRoute = require("./routes/adat");
 const authRoute = require("./routes/auth");
 const provinceRoute = require("./routes/province");
 const userRoute = require("./routes/user");
+var cors = require('cors');
 
 
+app.use(cors());
 dotenv.config();
 
 mongoose
