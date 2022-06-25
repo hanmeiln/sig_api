@@ -129,7 +129,7 @@ router.get("/calculate", async (req, res) => {
       counts = adats.map((item) => item.count);
       average = jumlahBudaya / jumlahProvinsi;
       standarDev = std(counts);
-      n = 0.8;
+      n = 1;
       high = average + n * standarDev;
       low = average - n * standarDev;
 
