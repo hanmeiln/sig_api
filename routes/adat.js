@@ -41,7 +41,7 @@ router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
   router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
     try {
       await Adat.findByIdAndDelete(req.params.id);
-      res.status(200).json("Adat has been deleted...");
+      res.status(200).json("Adat berhasil di hapus");
     } catch (err) {
       res.status(500).json(err);
     }

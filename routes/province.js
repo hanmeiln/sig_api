@@ -56,7 +56,7 @@ router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
 router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
   try {
     await Province.findByIdAndDelete(req.params.id);
-    res.status(200).json("Province has been deleted...");
+    res.status(200).json("Provinsi berhasil dihapus");
   } catch (err) {
     res.status(500).json(err);
   }
