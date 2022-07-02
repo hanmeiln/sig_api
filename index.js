@@ -22,7 +22,7 @@ mongoose
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/adat", adatRoute);
-app.use("/api/users", userRoute);
+app.use("/api/user", userRoute);
 app.use("/api/province", provinceRoute);
 
 
